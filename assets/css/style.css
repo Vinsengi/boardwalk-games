@@ -19,6 +19,7 @@
 
 body {
     font-family: var(--primary-font);
+    padding-top: 57.15px;
 }
 h1, h2, h3 {
     font-family: var(--secondary-font);
@@ -158,18 +159,12 @@ h2 {
     background-color: transparent;
 }
 
-#event .table {
+/* #event .table {
     margin-right: 1rem;
-}
+} */
 
-td {
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    word-wrap: break-word;
-}
-table {
-    table-layout: fixed;
-}
+
+
 /* grid visualisation CSS for testing */
 
 /* .container,
@@ -200,10 +195,10 @@ table {
         min-height: 191px;
     }
 
-    .event-paragraph .table {
+    /* .event-paragraph .table {
         justify-content: start;
         margin: 0.5rem;
-    }
+    } */
 
    
 }
@@ -215,9 +210,9 @@ table {
         min-height: auto;
     }
 
-   .table .event-paragraph {
+   /* .table .event-paragraph {
         display: inline-flex;
-    }
+    } */
 }
 
 /* xl devices (large desktops, 1200px and up) */
