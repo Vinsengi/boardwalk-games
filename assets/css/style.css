@@ -83,6 +83,11 @@ h2 {
     
 }
 
+.sharp-corners {
+    border-radius: 0;
+}
+
+
 /* Navbar */
 #navbar {
     background-color: var(--primary-color);
@@ -153,7 +158,18 @@ h2 {
     background-color: transparent;
 }
 
+#event .table {
+    margin-right: 1rem;
+}
 
+td {
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+}
+table {
+    table-layout: fixed;
+}
 /* grid visualisation CSS for testing */
 
 /* .container,
@@ -169,12 +185,27 @@ h2 {
 
 /* Media queries */
 
+/* Medium devices (tablets, 320px and up) */
+
+@media screen and (min-width: 320px) {
+    /* Make all service cards the same height for consistency */
+    
+}
+
 /* Medium devices (tablets, 768px and up) */
+
 @media screen and (min-width: 768px) {
     /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: 191px;
     }
+
+    .event-paragraph .table {
+        justify-content: start;
+        margin: 0.5rem;
+    }
+
+   
 }
 
 /* Large devices (small laptops, 992px and up) */
@@ -182,6 +213,10 @@ h2 {
     /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: auto;
+    }
+
+   .table .event-paragraph {
+        display: inline-flex;
     }
 }
 
